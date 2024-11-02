@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminous Treasure</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+        #logo {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #444;
+            border-radius: 5px;
+        }
+        #main {
+            padding: 20px;
+            width: 100%;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .product {
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+            height: auto;
+        }
+        .product h2 {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+        .product button {
+            background: #25D366; /* WhatsApp green */
+            color: #fff;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .product button:hover {
+            background: #444;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #000;
+            color: #fff;
+        }
+        .about, .testimonials {
+            text-align: center;
+            margin: 20px 0;
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .testimonial {
+            margin: 10px;
+            font-style: italic;
+        }
+        .contact-buttons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        .contact-buttons button {
+            background: #25D366; /* WhatsApp green */
+            color: #fff;
+            padding: 8px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+        .contact-buttons .insta {
+            background: #0095e8; /* Instagram color */
+        }
+        .contact-buttons img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px; /* Spacing between image and text */
+        }
+        @media (max-width: 600px) {
+            #logo {
+                width: 60px;
+                height: 60px;
+            }
+            .product h2 {
+                font-size: 14px;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="C:\Users\sachi\Downloads\WhatsApp Image 2024-11-02 at 23.37.49_279cc0e9.jpg" id="logo" alt="Luminous Treasure Logo">
+    <h1>Luminous Treasure</h1>
+    <nav>
+        <a href="#collection">Collection</a>
+        <a href="#about">About Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div id="main">
+    <div class="container" id="collection">
+        <h2 style="text-align:center; margin: 20px 0;">Our Collection</h2>
+
+        <!-- Old Products -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/9b/a8/97/9ba897699e0e76229e938d4c01671714.jpg" alt="Amrapali Necklace">
+            <h2>Amrapali Necklace</h2>
+            <button onclick="window.open('https://wa.me/918955356918', '_blank')">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/e0/31/82/e031825a9cf077aafd8d2c60f30a831c.jpg" alt="Traditional Kundan Set">
+            <h2>Traditional Kundan Set</h2>
+            <button onclick="window.open('https://wa.me/918955356918', '_blank')">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/27/b2/19/27b219f359d2d3779ab25e3976976f3b.jpg" alt="Green Flower Choker Necklace">
+            <h2>Green Flower Choker Necklace</h2>
+            <button onclick="window.open('https://wa.me/918955356918', '_blank')">Buy Now</button>
+        </div>
+
+        <!-- New Products -->
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/39/61/43/396143df8b558c59599f15ec492eecfe.jpg" alt="Green Kundan Choker">
+            <h2>Green Kundan Choker</h2>
+            <button onclick="window.open('https://wa.me/918955356918', '_blank')">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/25/ff/b8/25ffb8a0e5b67f068abc3686de874bad.jpg" alt="Artificial Flower Jewelry">
+            <h2>Artificial Flower Jewelry</h2>
+            <button onclick="window.open('https://wa.me/918955356918', '_blank')">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/25/ff/b8/25ffb8a0e5b67f068abc3686de874bad.jpg" alt="Ruby and Green Artificial Bangles">
+            <h2>Ruby and Green Artificial Bangles</h2>
+            <button onclick="window.open('https://wa.me/918955356918', '_blank')">Buy Now</button>
+        </div>
+
+        <div class="product">
+            <img src="https://i.pinimg.com/564x/11/8d/0a/118d0a9f2e0d2607aede9aed5b5d4603.jpg" alt="Wide Gold Bangles">
+            <h2>Wide Gold Bangles</h2>
+            <button onclick="window.open('https://wa.me/918955356918', '_blank')">Buy Now</button>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>At Luminous Treasure, we offer a unique collection of handcrafted jewelry that blends tradition with modern elegance. Our pieces are designed to make you shine on any occasion.</p>
+    </div>
+
+    <div class="testimonials" id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">"Absolutely love my Amrapali set! It's stunning!" - Priya</div>
+        <div class="testimonial">"The quality is unmatched and worth every penny!" - Neha</div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Luminous Treasure. All rights reserved.</p>
+</footer>
+
+<div class="contact-buttons">
+    <button class="whatsapp" onclick="window.open('https://wa.me/918955356918', '_blank')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo"> WhatsApp
+    </button>
+    <button class="insta" onclick="window.open('https://instagram.com/luminoustreasure', '_blank')">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo"> Instagram
+    </button>
+</div>
+
+</body>
+</html>
